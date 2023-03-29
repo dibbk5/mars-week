@@ -1,6 +1,6 @@
 public class Mars {
     public static void main(String[] args) {
-        String colonyName = "Bobtown";
+        // String colonyName = "Bobtown";
         int shipPopulation = 300;
         double meals = 4000.00;
         boolean landing = true;
@@ -21,6 +21,8 @@ public class Mars {
         }
 
         landing = landingCheck(4);
+
+        new GuessingGame();
 
     }
 
@@ -48,4 +50,5 @@ public class Mars {
         System.out.println("Landed");
         return false;
     }
+
 }
