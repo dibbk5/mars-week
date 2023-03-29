@@ -1,5 +1,3 @@
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
-
 public class Mars {
     public static void main(String[] args) {
         String colonyName = "Bobtown";
