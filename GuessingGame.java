@@ -44,8 +44,9 @@ public class GuessingGame {
             }
 
         }
+        scan.nextLine();
 
-        scan.close();
+        // scan.close();
 
     }
 

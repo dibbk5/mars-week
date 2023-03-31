@@ -3,27 +3,28 @@ import java.util.Scanner;
 public class MarsExpedition {
 
     public MarsExpedition() {
-        Scanner input = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Welcome aboard the expidition \n This is your mars expidition.");
         // Ask for Name
         System.out.println("What is your name? Please enter it below.");
-        String userName = input.nextLine();
+        String userName = scan.nextLine();
 
         // Great and ask if they want to proceed
         System.out.println("Hi" + userName
                 + " - Welcome to the Expedition prep program. Are you ready to head out into the new world? \n Type Y or N");
-        String inputCheck = input.nextLine();
+        String inputCheck = scan.nextLine();
 
         // Answer their proceed
         if (inputCheck.equals("Y")) {
-            System.out.println("I knew you would say that. YOu are team leader for a reason");
+            System.out.println("I knew you would say that. You are team leader for a reason.");
         } else {
             System.out.println("Too bad you are team leader. You have to go.");
         }
 
         // Ask how many team members
         System.out.println("How many people do you want on your team");
-        int teamNumber = input.nextInt();
+        int teamNumber = scan.nextInt();
+        scan.nextLine();
 
         // Get team members to 2
         if (teamNumber > 2) {
@@ -38,14 +39,14 @@ public class MarsExpedition {
 
         // Get Snack Choice
         System.out.println(
-                "Now for the important part\n You are allowed to bring one snack with you. What do you want to bring?");
-        String snackChoice = input.nextLine();
+                "Now for the important part\nYou are allowed to bring one snack with you. What do you want to bring?");
+        String snackChoice = scan.nextLine();
         System.out.println("Nice choice, you will be bringing " + snackChoice + " with you.");
 
         // Pick your vehicle
         System.out.println(
-                "Now choose your vehicle from the list. Please chose the vehicle using the number associated with the vehicle\n 1. Van\n2. Taxi\n3. Police Car\n4. Bus");
-        int vehicleChoice = input.nextInt();
+                "Now choose your vehicle from the list. Please chose the vehicle using the number associated with the vehicle\n1. Van\n2. Taxi\n3. Police Car\n4. Bus");
+        int vehicleChoice = scan.nextInt();
         String finalVehicle = "";
 
         switch (vehicleChoice) {
@@ -64,12 +65,12 @@ public class MarsExpedition {
         }
 
         System.out.println("Wow! You have put together quite the team." +
-                "\n You, " + userName + " decided to take " + teamNumber + " people on your team." +
-                "\n You brought " + snackChoice + " as your snack for your team." +
-                "\n Last but not least, you decided to drive a " + finalVehicle + " as your expidition vehicle." +
-                "\n \n Wow! I hope you survive");
+                "\nYou, " + userName + " decided to take " + teamNumber + " people on your team." +
+                "\nYou brought " + snackChoice + " as your snack for your team." +
+                "\nLast but not least, you decided to drive a " + finalVehicle + " as your expidition vehicle." +
+                "\n\n Wow! I hope you survive");
 
-        input.close();
+        scan.close();
     }
 
 }
