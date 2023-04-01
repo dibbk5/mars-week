@@ -70,7 +70,6 @@ public class MarsExpedition {
                 "\nLast but not least, you decided to drive a " + finalVehicle + " as your expidition vehicle." +
                 "\n\n Wow! I hope you survive");
 
-        scan.close();
     }
 
 }
